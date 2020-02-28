@@ -1,0 +1,18 @@
+{%extends 'pictures/base.html'%}
+{% block content %}
+{% load static %}
+{{ block.super}}
+   <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+  {% for image in image %}
+<div class="row">
+    <div class="col-12">
+
+    <a href="image/{{image.id}} ">{{image.title}}</a>
+
+
+    <img src=" {{image.image_url.url}}" class="img-responsive" alt="Image">
+    </div>
+</div>
+  {% endfor %}
+
+{% endblock %}
