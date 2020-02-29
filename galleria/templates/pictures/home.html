@@ -3,6 +3,7 @@
 {% load static %}
 {{ block.super}}
    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+<body>
   {% for image in image %}
 <div class="row">
     <div class="col-12">
@@ -14,5 +15,6 @@
     </div>
 </div>
   {% endfor %}
+</body>
 
 {% endblock %}

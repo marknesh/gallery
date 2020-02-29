@@ -4,7 +4,7 @@ from django.urls import path, re_path
 from . import views
 
 urlpatterns = [
-    path('',views.welcome,name="DD" ),
+    path('',views.welcome,name="home" ),
     re_path(r'^image/(\d+)',views.image,name='article'),
     path('search/', views.search, name='search'),
 
