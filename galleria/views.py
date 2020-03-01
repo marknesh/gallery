@@ -2,7 +2,7 @@ from django.shortcuts import render,Http404
 from .models import Image
 
 def welcome(request):
-    image=Image.allimages()
+    image=Image.allimages
     return render(request,'pictures/home.html',{'image':image})
 def image(request,image_id):
     try:
