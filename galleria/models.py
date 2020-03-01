@@ -25,7 +25,6 @@ class Image(models.Model):
 
 
 
-
     @classmethod
     def allimages(cls):
         images=cls.objects.all()
