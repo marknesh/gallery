@@ -10,8 +10,12 @@
 <div class="image">
     <img src=" {{imageid.image_url.url}}" >
 </div>
-<a href="{% url  'location' %}">{{imageid.location}}</a>
+        <br>
+        <div class="details">
+Location:<a href="{% url  'location' %}">{{imageid.location}}</a>
+      <h5>Description</h5>
 <p>{{imageid.description}}</p>
+        </div>
     </div>
 </div>
 </div>

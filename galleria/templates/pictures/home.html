@@ -15,7 +15,7 @@
         <a href="image/{{image.id}}" ><img src=" {{image.image_url.url}}" class="img-responsive" alt="Image" width="300" height="200" ></a>
 </div>
         <p>{{image.title}}</p>
-        {{image.pub_date|timesince}} ago
+        Posted:<div class="badge badge-success">{{image.pub_date|timesince}}</div> ago
     </div>
 
   {% endfor %}
