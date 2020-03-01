@@ -20,3 +20,15 @@ def search(request):
     else:
         message = "since you haven't searched for any term"
         return render(request, 'pictures/search.html', {"message": message})
+
+
+def location(request):
+    if 'location' in request.GET and request.GET["location"]:
+        search=request.GET.get("location")
+        searched=Image.filter_image(search)
+        message=f"{search}"
+        return render(request,'pictures/filter.html',{"message": message, "searched": searched})
+    else:
+        message = "since you haven't searched for any term"
+        return render(request, 'pictures/filter.html', {"message": message})
+

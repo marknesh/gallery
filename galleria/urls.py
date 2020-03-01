@@ -7,6 +7,7 @@ urlpatterns = [
     path('',views.welcome,name="home" ),
     re_path(r'^image/(\d+)',views.image,name='article'),
     path('search/', views.search, name='search'),
+    path('filter/', views.location, name='location'),
 
 ]
 
