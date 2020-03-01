@@ -2,7 +2,10 @@ body{
 background-color: khaki;}
 
 .image{
-overflow:hidden;
+width:100%;
+text-align:center;
 height:auto;
+overflow-x:hidden;
+overflow-y:hidden;
 
 }
