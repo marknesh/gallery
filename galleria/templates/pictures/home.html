@@ -2,20 +2,25 @@
 {% block content %}
 {% load static %}
 {{ block.super}}
-   <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+
+<div class="container">
 <body>
-Welcomesffl
-  {% for image in image %}
+
 <div class="row">
-    <div class="col-12">
+  {% for image in image %}
 
-    <a href="image/{{image.id}} ">{{image.title}}</a>
-
-
-    <img src=" {{image.image_url.url}}" class="img-responsive" alt="Image">
-    </div>
+    <div class="col-md-4">
+        <br>
+<div class="image">
+        <a href="image/{{image.id}}" ><img src=" {{image.image_url.url}}" class="img-responsive" alt="Image" width="300" height="200" ></a>
 </div>
+        <p>{{image.title}}</p>
+        {{image.pub_date|timesince}} ago
+    </div>
+
   {% endfor %}
+</div>
 </body>
+</div>
 
 {% endblock %}

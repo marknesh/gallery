@@ -20,7 +20,7 @@ class Image(models.Model):
     title=models.CharField(max_length=20)
     description = models.CharField(max_length=20,blank=True)
     image_url=models.ImageField(upload_to='images/')
-    pub_date=models.DateField(auto_now_add=True)
+    pub_date=models.DateTimeField(auto_now_add=True)
 
 
 

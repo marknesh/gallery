@@ -1,2 +1,8 @@
 body{
 background-color: khaki;}
+
+.image{
+overflow:hidden;
+height:auto;
+width:50%;
+}

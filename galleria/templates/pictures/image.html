@@ -3,8 +3,17 @@
 {% load static %}
 
 {{ block.super}}
-
-
-    {{imageid.description}}
+<link rel="stylesheet" type="text/css" href="{% static 'css/imageid.css' %}">
+<div class="container">
+<div class="row">
+    <div class="col-md-12 ">
+<div class="image">
+    <img src=" {{imageid.image_url.url}}" width="600" height="400">
+</div>
+<a href="{% url  'location' %}">{{imageid.location}}</a>
+<p>{{imageid.description}}</p>
+    </div>
+</div>
+</div>
 
 {% endblock %}
