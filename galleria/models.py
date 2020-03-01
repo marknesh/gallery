@@ -32,12 +32,12 @@ class Image(models.Model):
 
     @classmethod
     def search_image(cls, category):
-        search = cls.objects.filter(category=category)
+        search = cls.objects.filter(category__category=category)
         return search
 
     @classmethod
     def filter_image(cls, location):
-        location = cls.objects.filter(location=location)
+        location = cls.objects.filter(location__location=location)
         return location
 
 
