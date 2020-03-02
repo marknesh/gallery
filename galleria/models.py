@@ -23,8 +23,6 @@ class Image(models.Model):
     pub_date=models.DateTimeField(auto_now_add=True)
 
 
-
-
     @classmethod
     def allimages(cls):
         images=cls.objects.all()

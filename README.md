@@ -2,7 +2,7 @@
 Nesh-gallery
 
 ## Description
-This application displays the users photos and location.The application allows the user to filter the search according to the location of the image and categoty of the image.
+This application displays the users photos and location.The application allows the user to filter the search according to the location of the image and category of the image.
 
 ## Operating
 On the opening must first login to the admin page.
