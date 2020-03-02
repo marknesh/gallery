@@ -2,7 +2,7 @@
 Nesh-gallery
 
 ## Description
-This application displays the users photos and location.
+This application displays the users photos and location.The application allows the user to filter the search according to the location of the image and categoty of the image.
 
 ## Operating
 On the opening must first login to the admin page.
@@ -24,6 +24,7 @@ To run test run
 python3.6 manage.py test
 
 ```
+
 
 ##  Technology used
 I used python to create the application together with the django framework which was really helpful.
