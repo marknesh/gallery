@@ -23,10 +23,19 @@ class Image(models.Model):
     pub_date=models.DateTimeField(auto_now_add=True)
 
 
+    def save_image(self):
+        self.save()
+
+    def delete_image(self):
+        self.delete()
+
+
     @classmethod
     def allimages(cls):
         images=cls.objects.all()
         return images
+
+
 
     @classmethod
     def search_image(cls, category):
