@@ -15,7 +15,7 @@ The main features include adding an image,category and location.
 First create a folder called Nesh-Gallery.
 Then run this command inside the folder
 ```
-git clone  
+git clone https://github.com/marknesh/gallery.git 
 ```
 
 ##Test
