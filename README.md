@@ -33,6 +33,19 @@ python3.6 manage.py test
 
 ```
 
-
 ##  Technology used
 I used python to create the application together with the django framework which was really helpful.
+
+## Troubleshooting
+If you encounter any problems please feel free to contact me using the contacts provided  below incase you encounter any bugs.
+
+## Support and contact details
+Contact us on : 07213445
+Email us on: neshgallery@gmail.com
+
+## Contributors
+[marknesh]
+
+
+
+
