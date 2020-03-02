@@ -5,7 +5,9 @@ from . import views
 
 urlpatterns = [
     path('',views.welcome,name="home" ),
-    re_path(r'^image/(\d+)',views.image,name='article'),
+    re_path(r'^image/(\d+)',views.image,name='image'),
+    re_path(r'^search/image/(\d+)', views.image, name='image'),
+    re_path(r'^filter/image/(\d+)', views.image, name='image'),
     path('search/', views.search, name='search'),
     path('filter/', views.location, name='location'),
 
