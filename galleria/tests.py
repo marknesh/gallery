@@ -12,5 +12,19 @@ class ImageTestClass(TestCase):
         self.assertTrue(isinstance(self.image,Image))
 
 
+    def test_save_method(self):
+        self.image.save_image()
+        IMage = Image.objects.all()
+        self.assertTrue(len(IMage) > 0)
+
+    def test_delete_method(self):
+        self.image.delete_image()
+        Imaage=Image.objects.all()
+        self.assertTrue(len(Imaage)<1)
+
+
+
+
+
 
 # Create your tests here.
