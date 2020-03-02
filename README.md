@@ -18,7 +18,7 @@ Then run this command inside the folder
 git clone https://github.com/marknesh/gallery.git 
 ```
 
-##Test
+## Test
 To run test run 
 ```
 python3.6 manage.py test
