@@ -1,6 +1,8 @@
 ## Application name
 Nesh-gallery
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ## Description
 This application displays the users photos and location.The application allows the user to filter the search according to the location of the image and category of the image.
 
