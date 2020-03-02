@@ -1,4 +1,5 @@
 from django.db import models
+import pyperclip
 
 
 class Category(models.Model):
@@ -28,6 +29,12 @@ class Image(models.Model):
 
     def delete_image(self):
         self.delete()
+
+    def copy_image(self,image_url):
+        pyperclip.copy(image_url)
+
+    def paste_image(image_url):
+        pyperclip.paste()
 
 
     @classmethod

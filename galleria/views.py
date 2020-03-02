@@ -5,11 +5,14 @@ def welcome(request):
     image=Image.allimages
     return render(request,'pictures/home.html',{'image':image})
 def image(request,image_id):
+
+    ss=Image.copy_image
     try:
         imageid= Image.objects.get(id = image_id)
+
     except Exception:
         raise Http404()
-    return render(request,"pictures/image.html", {"imageid":imageid})
+    return render(request,"pictures/image.html", {"imageid":imageid,"ss":ss})
 
 def search(request):
     if 'category' in request.GET and request.GET["category"]:
