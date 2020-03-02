@@ -12,6 +12,8 @@ After logging in the user can create an image depending on the category and loca
 
 ## Features
 The main features include adding an image,category and location.
+I can add an image according to the category or location that i want.
+One can also delete an image or category.
 
 ## setup
 First create a folder called Nesh-Gallery.
