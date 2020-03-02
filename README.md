@@ -17,6 +17,10 @@ Then run this command inside the folder
 ```
 git clone https://github.com/marknesh/gallery.git 
 ```
+To run the server run
+```
+python3.6 manage.py runserver
+```
 
 ## Test
 To run test run 
