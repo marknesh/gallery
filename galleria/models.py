@@ -16,8 +16,8 @@ class Location(models.Model):
         return self.location
 
 class Image(models.Model):
-    category=models.ForeignKey('Category',on_delete=models.CASCADE,default=None)
-    location = models.ForeignKey('Location', on_delete=models.CASCADE,default=None)
+    category=models.ForeignKey('Category',on_delete=models.CASCADE,null=True,blank=True)
+    location = models.ForeignKey('Location', on_delete=models.CASCADE,null=True,blank=True)
     title=models.CharField(max_length=20)
     description = models.CharField(max_length=20,blank=True)
     image_url=models.ImageField(upload_to='images/')
