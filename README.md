@@ -1,3 +1,4 @@
+[![codebeat badge](https://codebeat.co/badges/30baa9f3-0948-46d2-b044-c69a0d61f643)](https://codebeat.co/projects/github-com-marknesh-gallery-master)
 ## Application name
 Nesh-gallery
 
